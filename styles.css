@@ -20,6 +20,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    outline: 1px solid hotpink;
 }
 
 body {
@@ -56,22 +57,22 @@ header {
     justify-content: center;
     width: 100%;
     height: 20%;
-    /* background-color: var(--black); */
 }
 
 #bar-middle {
-    width: 1000px;
+    width: 520px;
+    min-width: 520px;
 }
 
 #bar-left,
 #bar-right {
-    width: 20%;
+    width: 163px;
 }
 
 #bar-middle,
 #bar-left,
 #bar-right {
-    height: 8%;
+    height: 20px;
     background: linear-gradient(grey 00%, black 100%);
 }
 
@@ -89,6 +90,13 @@ header {
     justify-content: center;
 }
 
+#barbell-card .spinner {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    padding: 10px;
+}
+
 .bar-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -103,8 +111,13 @@ header {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
     font-size: 2rem;
     padding: 10px;
+}
+
+#barbell-card .spinner {
+    flex-direction: row;
 }
 
 button {
