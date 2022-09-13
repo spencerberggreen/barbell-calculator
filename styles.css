@@ -44,6 +44,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
 header {
@@ -87,35 +88,19 @@ header {
     height: 100%;
 }
 
-@media screen and (max-width: 1000px) {
-    #barbell {
-        width: calc(856px / 2);
-        height: calc(180px / 2);
-    }
-
-    #bar-middle {
-        width: calc(520px / 2);
-        min-width: calc(520px / 2);
-    }
-
-    #bar-left,
-    #bar-right {
-        width: calc(163px / 2);
-    }
-
-    #bar-middle,
-    #bar-left,
-    #bar-right {
-        height: calc(20px / 2);
-    }
-}
-
 /* formatting */
 
 #weights {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#weight-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #barbell-card .spinner {
@@ -128,6 +113,8 @@ header {
 #plates {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 #large-plates,
@@ -146,7 +133,6 @@ header {
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    padding: 10px;
 }
 
 #barbell-card .spinner {
@@ -241,4 +227,80 @@ h3 {
     width: 12px;
     border-radius: 10px;
     border: 1px solid black;
+}
+
+@media screen and (max-width: 1000px) {
+    #barbell {
+        width: calc(856px / 2);
+        height: calc(180px / 2);
+    }
+
+    #bar-middle {
+        width: calc(520px / 2);
+        min-width: calc(520px / 2);
+    }
+
+    #bar-left,
+    #bar-right {
+        width: calc(163px / 2);
+    }
+
+    #bar-middle,
+    #bar-left,
+    #bar-right {
+        height: calc(20px / 2);
+    }
+    .l55,
+    .r55,
+    .l45,
+    .r45,
+    .l35,
+    .r35,
+    .l25,
+    .r25 {
+        width: 11px;
+    }
+    .l15,
+    .r15,
+    .l10,
+    .r10,
+    .l5,
+    .r5,
+    .l2-5,
+    .r2-5 {
+        width: 6px;
+    }
+}
+
+@media screen and (max-height: 420px) {
+    h1 {
+        display: none;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #barbell {
+        width: calc(856px / 3);
+        height: calc(180px / 3);
+    }
+
+    #bar-middle {
+        width: calc(520px / 3);
+        min-width: calc(520px / 3);
+    }
+
+    #bar-left,
+    #bar-right {
+        width: calc(163px / 3);
+    }
+
+    #bar-middle,
+    #bar-left,
+    #bar-right {
+        height: calc(20px / 3);
+    }
 }
