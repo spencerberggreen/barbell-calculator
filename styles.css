@@ -20,6 +20,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-align: center;
     /* outline: 1px solid hotpink;
     border-radius: 10px; */
 }
@@ -151,7 +152,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 h3 {
@@ -271,6 +272,35 @@ h3 {
         width: 6px;
     }
 }
+
+/* buttons */
+
+#subtract-55,
+#add-55 {
+    background-color: rgb(255, 100, 100);
+}
+#subtract-45,
+#add-45,
+#subtract-5,
+#add-5 {
+    background-color: rgb(100, 100, 255);
+}
+#subtract-35,
+#add-35 {
+    background-color: rgb(255, 255, 100);
+}
+#subtract-25,
+#add-25,
+#subtract-2-5,
+#add-2-5 {
+    background-color: rgb(100, 255, 100);
+}
+#subtract-15,
+#add-15 {
+    background-color: rgb(100, 100, 100);
+}
+
+/* scaling */
 
 @media screen and (max-height: 420px) {
     h1 {
