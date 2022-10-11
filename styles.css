@@ -149,6 +149,8 @@ button {
     width: 35px;
     border-radius: 5px;
     font-size: 1.5rem;
+    color: black;
+    border-color: black;
 }
 
 h1 {
